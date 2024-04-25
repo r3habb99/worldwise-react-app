@@ -1,7 +1,6 @@
 import CityItem from "./CityItem";
 import styles from "./CityList.module.css";
 import Spinner from "./Spinner";
-import PropTypes from "prop-types";
 import Message from "./Message";
 import { useCities } from "../contexts/citiesContext";
 
@@ -21,13 +20,4 @@ function CityList() {
     </ul>
   );
 }
-
-CityList.propTypes = {
-  cities: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number,
-    })
-  ).isRequired,
-  isLoading: PropTypes.bool.isRequired,
-};
 export default CityList;
