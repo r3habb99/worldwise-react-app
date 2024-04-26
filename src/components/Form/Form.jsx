@@ -4,15 +4,15 @@
 import { useEffect, useState } from "react";
 
 import styles from "./Form.module.css";
-import Button from "./Button";
-import BackButton from "./BackButton";
-import useUrlPosition from "../hooks/useUrlPosition";
-import Message from "./Message";
-import Spinner from "./Spinner";
+import Button from "../Buttons/Button";
+import BackButton from "../Buttons/BackButton";
+import useUrlPosition from "../../hooks/useUrlPosition";
+import Message from "../Message/Message";
+import Spinner from "../Spinner/Spinner";
 import DatePicker from "react-date-picker";
 import "react-date-picker/dist/DatePicker.css";
 import "react-calendar/dist/Calendar.css";
-import { useCities } from "../contexts/citiesContext";
+import { useCities } from "../../contexts/citiesContext";
 import { useNavigate } from "react-router-dom";
 
 export function convertToEmoji(countryCode) {
