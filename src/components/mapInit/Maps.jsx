@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import {
   MapContainer,
   TileLayer,
@@ -11,9 +11,9 @@ import {
 } from "react-leaflet";
 import styles from "./Map.module.css";
 import { useEffect, useState } from "react";
-import { useCities } from "../../contexts/citiesContext";
+import { useCities } from "../../contexts/CitiesContext";
 import { useGeolocation } from "../../hooks/useGeolocation";
-import Button from "../Buttons/Button";
+import Button from "../buttons/Button";
 import useUrlPosition from "../../hooks/useUrlPosition";
 
 function Maps() {
